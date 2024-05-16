@@ -1,0 +1,46 @@
+<!-- این فایل قسمت بالای طرح کلی صفحات است که همه جا بکار میرود -->
+<?php 
+$UserIsAdmin = false;
+try{
+    session_start();//راه اندازی سشن برای نگهداری وضعیت کاربر
+}catch(Exception $exc){
+
+}
+if (!isset($_SESSION)) 
+{
+    session_start();//راه اندازی سشن برای نگهداری وضعیت کاربر
+}
+else
+{
+     //این متغیر همه جا بکار میرود تا بدانیم ادمین وارد شده یا کاربر بازدید کننده
+    if ($_SESSION['username'] != null) 
+    {
+        if ($_SESSION['username'] == 'admin') 
+            $UserIsAdmin = true;
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <?php echo $pageTitle ?>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mainStyle.css">
+</head>
+
+<body>
+    <!-- سازنده سربرگ در صفحاتی که استفاده میشود -->
+    <div class="row" style="text-align: center;">
+        <img class="logo" style="float: right; " src="./images/logo.png ">
+        <div class="columnRight" style="font-size: 30px;width:60%;">
+            <?php echo $pageTitle ?> </div>      
+    </div>
+
+    <div class="horizontalSpacer "></div>
+
+    <!-- تگ بادی در فایل پایینی بسته میشود  -->

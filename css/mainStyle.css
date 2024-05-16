@@ -1,0 +1,331 @@
+﻿/*
+فونت آپلود شده در فولدر مربوطه که برای همه قسمتها بکار میرود
+*/
+
+@font-face {
+    font-family: fntMain;
+    src: url(../fonts/IRANSansWeb.woff);
+    font-size: xx-large;
+}
+
+* {
+    background-color: var(--darker-color);
+    box-sizing: border-box;
+    font-family: fntMain;
+    border-radius: 8px;
+    direction: rtl;
+    color: var(--lighter-color);
+    max-width: 850px;
+    margin: auto;
+}
+
+
+/*
+تعریف متغیرهایی که در تمام قسمتها بکار میروند
+میتوان مثلا با رنگها کل تم را عوض کرد
+*/
+
+
+/*تم قهوه ای 
+
+:root {
+    --darker-color: rgb(26, 14, 4);
+    --dark-color: rgb(41, 23, 8);
+    --mid-color: rgb(51, 27, 6);
+    --light-color: rgb(223, 190, 106);
+    --lighter-color: rgb(247, 228, 179);
+    --formHeight: 100px;
+}
+*/
+
+/*تم خاکستری 
+
+:root {
+    --darker-color: rgb(20, 20, 20);
+    --dark-color: rgb(35, 35, 35);
+    --mid-color: rgb(60, 60, 60);
+    --light-color: rgb(160, 160, 160);
+    --lighter-color: rgb(228, 228, 228);
+    --formHeight: 100px;
+}
+*/
+/*تم آبی*/
+
+
+:root {
+    --darker-color: rgb(31, 31, 59);
+    --dark-color: rgb(54, 54, 92);
+    --mid-color: rgb(70, 70, 119);
+    --light-color: rgb(136, 136, 197);
+    --lighter-color: rgb(251, 251, 255);
+    --formHeight: 100px;
+}
+
+
+
+
+/*تم سبز*/
+
+
+/*
+:root {
+    --darker-color: rgb(21, 43, 21);
+    --dark-color: rgb(19, 54, 19);
+    --mid-color: rgb(25, 63, 25);
+    --light-color: rgb(122, 196, 122);
+    --lighter-color: rgb(182, 250, 182);
+    --formHeight: 100px;
+}
+
+*/
+
+
+/*
+برای ایجاد یک سطر مستقل تمام صفحه (در صفحه پدرش) مثل هدر و مشخصات استفاده میشود
+*/
+
+.row {
+    background-color: var(--mid-color);
+    color: var(--light-color);
+    margin: auto;
+    width: 99%;
+    padding: 3px;
+    height: var(--formHeight +40px);
+    overflow: hidden;
+    margin: 2px;
+    border-color: var(--light-color);
+    border-style: solid;
+    border-width: 2px;
+}
+
+
+/*
+مشخصات ستون سمت راست که فرامین و لینکها در آن قرار میگیرند
+*/
+
+.column {
+    background-color: var(--mid-color);
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    text-align: center;
+    float: none;
+    width: 30%;
+    padding: 3px;
+    height: var(--formHeight+30px);
+    overflow: hidden;
+    margin: auto;
+    /* border-color: var(--light-color);
+    border-style: solid;
+    border-width: 2px; */
+}
+
+
+/*
+مشخصات ستون سمت راست که فرامین و لینکها در آن قرار میگیرند
+*/
+
+.columnRight {
+    background-color: var(--mid-color);
+    color: var(--lighter-color);
+    text-align: center;
+    float: right;
+    width: 25%;
+    padding: 3px;
+    height: var(--formHeight+30px);
+    overflow: hidden;
+    margin: auto;
+    /* border-color: var(--light-color);
+    border-style: solid;
+    border-width: 2px; */
+}
+
+
+/*
+مشخصات ستون سمت چپ که مشخصات و ابزار ویرایش اطلاعات در آن قرار میگیرند
+*/
+
+.columnLeft {
+    background-color: var(--mid-color);
+    float: right;
+    width: 75%;
+    padding: 3px;
+    height: var(--formHeight+30px);
+    overflow: hidden;
+    margin: auto;
+    /* border-color: var(--light-color);
+    border-style: solid;
+    border-width: 2px; */
+}
+
+
+/*
+آواتارهای کتاب ناشر یا نویسنده در صفحات
+*/
+
+.avatar {
+    background-color: var(--mid-color);
+    width: 100%;
+    max-width: 170px;
+    margin: auto;
+}
+
+
+/*
+عنوان همه فرمها از این کلاس استایل اسفاده میکند
+*/
+
+.title {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border-color: var(--light-color);
+    border-style: solid;
+    border-width: 3px;
+    padding: 4px;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.caption {
+    background-color: var(--mid-color);
+    margin: auto;
+    float: right;
+    text-align: end;
+    width: 30%;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.field {
+    background-color: var(--mid-color);
+    margin: auto;
+    float: left;
+    text-align: start;
+    width: 70%;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.field-input {
+    float: right;
+    width: 65%;
+    padding: 10px;
+    margin: 4px;
+    background: var(--darker-color);
+    color: var(--lighter-color);
+    font-size: 20px;
+    border: none;
+    cursor: default;
+    border-radius: 8px;
+}
+
+textarea {
+    float: left;
+    width: 97%;
+    height: 95%;
+    padding: 5px;
+    margin: 4px;
+    background: var(--darker-color);
+    color: var(--lighter-color);
+    font-size: 20px;
+    border-color: var(--light-color);
+    border-style: solid;
+    border-width: 2px;
+    cursor: default;
+    border-radius: 8px;
+}
+
+
+/*
+هر جا نیاز به فاصله عمودی باشد (مانند فاصله باکس عنوان صفحه و باکس مشخصات
+از این کلاس استفاده میکنیم که باید اگر ارتفاع غیر از 8 پیکسل خواستیم  تنظیم کنیم
+*/
+
+.horizontalSpacer {
+    background-color: var(--darker-color);
+    width: 100%;
+    height: 5px;
+    overflow: hidden;
+}
+
+
+/*
+برای اندازه و نوع قرارگیری لوگو
+*/
+
+.logo {
+    background-color: var(--mid-color);
+    width: 65px;
+    height: 65px;
+    padding-top: 5px;
+    float: right;
+    overflow: hidden;
+}
+
+
+/*
+کلیدها 
+*/
+
+.buttonExtend {
+    background: var(--mid-color);
+    display: inline-block;
+    text-align: center;
+    font-size: large;
+    width: 90%;
+    padding: 5px;
+    color: var(--lighter-color);
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    border: 1px solid var(--light-color);
+    margin: 8px;
+}
+
+
+/*
+برای زیبایی و تشخیص عبور ماوس از روی کلید
+*/
+
+.buttonExtend:hover {
+    border: 2px solid var(--lighter-color);
+}
+
+.search-container {
+    float: left;
+    direction: rtl;
+    padding: 6px;
+    margin-top: 4px;
+    margin-right: 16px;
+    margin-bottom: 4px;
+    background: var(--darker-color);
+    color: var(--lighter-color);
+    font-size: 17px;
+    font-family: fntMain;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.searchButton {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: var(--lighter-color);
+    border-radius: 8px;
+    cursor: pointer;
+    /* hand-shaped cursor */
+    cursor: hand;
+    /* for IE 5.x */
+}
+
+.iconButton {
+    background-color: var(--light-color);
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    padding: 0;
+}

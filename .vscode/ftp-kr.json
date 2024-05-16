@@ -1,0 +1,16 @@
+{
+    "host": "hp.mustang.website",
+    "username": "root",
+    "password": "Shl123465431sHL",
+    "remotePath": "../var/www/html/lord",
+    "protocol": "sftp",
+    "port": 0,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": false,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}

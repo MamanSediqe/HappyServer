@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'fntMain';
+    transition: all 0.5s ease;
+}
+
+@font-face {
+    font-family: fntMain;
+    src: url(/fonts/IRANSansWeb.woff);
+    font-size: xx-large;
+}
+
+body {
+    display: flex;
+    height: 90%;
+    background-color: #231f20;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    direction: rtl;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    align-content: center;
+    padding-bottom: 7%;
+    background-color: rgb(54, 31, 12);
+    border-radius: 20px;
+    height: 60%;
+    width: 70%;
+    box-shadow: 0 0 25px rgb(104, 103, 103);
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
+
+
+/* .container:hover {
+    box-shadow: 0 0 15px rgb(255, 244, 140);
+    height: 62%;
+    width: 75%;
+    transition: all 0.5s ease-in;
+    transform: translateY(-5%);
+} */
+
+.Heading {
+    font-size: 3rem;
+    margin-top: 30%;
+    /* background-color: blue; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    height: auto;
+    transition: all 0.5s ease-out;
+}
+
+.Heading:hover {
+    color: #0F0;
+    text-shadow: 0 0 2px rgb(36, 83, 5);
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 10px;
+    font-size: 2rem;
+    width: 100%;
+    justify-content: space-around;
+    /* background-color: black;
+     height: 80%;*/
+}
+
+.input {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px;
+    width: 50%;
+    margin: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+    transition: all 0.5s ease-out;
+}
+
+.input:hover {
+    width: 70%;
+    font-size: 1.1rem;
+    transform: translateY(-5px);
+    color: rgba(223, 190, 106, 0.7);
+}
+
+.btnLax {
+    display: inline-block;
+    background: transparent;
+    text-align: center;
+    height: 5%;
+    color: rgba(223, 190, 106, 0.7);
+    border-radius: 0;
+    padding: 13px 40px 13px;
+    transition: all 0.7s ease-out;
+    background: linear-gradient(270deg, rgba(223, 190, 106, 0.8), rgba(146, 111, 52, 0.8), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    text-decoration: none;
+    margin: 0.3rem;
+    border: none;
+    border: 1px solid rgba(223, 190, 106, 0.3);
+}
+
+.btnLax:hover {
+    color: #fff;
+    border: 1px solid rgba(223, 190, 106, 0);
+    background-position: 99% 50%;
+}
+
+.roundedBox {
+    font-size: 1.2rem;
+    width: 40%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    border-style: groove;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: all 0.5s ease;
+    box-shadow: inset 2 2 0 0 #131313;
+}
+
+.roundedBox:hover {
+    box-shadow: inset 100% 0 0 0 #131313;
+    color: #360d97;
+    width: 70%;
+    transition: all 0.5s ease-in;
+}
+
+button,
+input {
+    font-size: 1.2rem;
+    width: 40%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    border-style: groove;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: all 0.5s ease;
+    box-shadow: inset 2 2 0 0 #131313;
+}
+
+button,
+input:hover {
+    box-shadow: inset 100% 0 0 0 #131313;
+    color: #ff0000;
+    width: 70%;
+    transition: all 0.5s ease-in;
+}
+
+@media screen and (max-width: 1920px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        width: 99%;
+        height: 99%;
+    }
+    .container {
+        width: 70%;
+        height: 100%;
+    }
+    .container:hover {
+        width: 75%;
+        height: 100%;
+    }
+    .Heading {
+        margin-top: 10%;
+    }
+}
