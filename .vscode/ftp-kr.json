@@ -1,8 +1,9 @@
 {
     "host": "hp.mustang.website",
     "username": "root",
-    "password": "Shl123465431sHL",
-    "remotePath": "../var/www/html/lord",
+    // "password": "Shl123465431sHL",
+    "password": "989jXYmBCjEu",
+    "remotePath": "../var/www/html/happy",
     "protocol": "sftp",
     "port": 0,
     "fileNameEncoding": "utf8",

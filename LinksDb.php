@@ -1,6 +1,4 @@
 <?php
-
-require_once "HappyUsers.php";
 require_once "Links.php";
 
 class LinksDB
@@ -27,13 +25,32 @@ class LinksDB
         $this->password = "Happy_12346";
        */
         $this->servername = "localhost";
+     
+      
+    //To use ubunto server
         //$this->dbName = "Links";
         //$this->dbName = "FoodsDb";
         //$this->dbName = "LinksDb";
-        $this->dbName = "LordDb";
-        // $this->username = "Happy_Admin";
+ /*        $this->dbName = "LordDb";
         $this->username = "happy_user";
         $this->password = "Happy_12346";
+   
+*/
+    //To use ukfarsi Happy database:
+    $this->dbName = "u312411968_happy_db";
+    $this->username = "u312411968_happy_user";
+    $this->password = "Happy_12346";
+/*  
+    //To use ukfarsi old Happy database:
+    $this->dbName = "u312411968_oldHappy";
+    $this->username = "u312411968_happy_olduser";
+    $this->password = "Happy_12346";
+
+    //To use ukfarsi Phantom database:
+       $this->dbName = "u312411968_new_phantomBD";
+        $this->username = "u312411968_new_phantomHS";
+        $this->password = "Alacdolac12346";
+ */
 
         $this->port = 3306;
         $this->conn = new mysqli($this->servername, $this->username, $this->password, $this->dbName, $this->port);
